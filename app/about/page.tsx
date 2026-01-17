@@ -27,7 +27,7 @@ export default function Page() {
       <p className={styles.p}>
         This website is a personal blog for myself in order to discuss my
         professional life in a space which I can control and is separated from
-        Meta&apos;s LinkedIn. To learn more about myself please check out my{" "}
+        LinkedIn. To learn more about myself please check out my{" "}
         <Link
           className={styles.link}
           href="https://joe-gilbert-developer.xyz"
@@ -73,8 +73,11 @@ export default function Page() {
             </TableRow>
 
             <TableRow>
-              <TableCell>Add playwright tests and a pipeline to run them on creation of a PR</TableCell>
-              <TableCell>Complete ✅</TableCell>
+              <TableCell>
+                Add playwright tests and a pipeline to run them on creation of a
+                PR
+              </TableCell>
+              <TableCell>Pending</TableCell>
             </TableRow>
 
             <TableRow>

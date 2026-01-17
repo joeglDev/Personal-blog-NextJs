@@ -73,15 +73,15 @@ export default function Page() {
             </TableRow>
 
             <TableRow>
-              <TableCell>
-                Add playwright tests and a pipeline to run them on creation of a
-                PR
-              </TableCell>
+              <TableCell>Header with navigation</TableCell>
               <TableCell>Pending</TableCell>
             </TableRow>
 
             <TableRow>
-              <TableCell>Header with navigation</TableCell>
+              <TableCell>
+                Add playwright tests and a pipeline to run them on creation of a
+                PR
+              </TableCell>
               <TableCell>Pending</TableCell>
             </TableRow>
 

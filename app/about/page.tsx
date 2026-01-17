@@ -58,7 +58,7 @@ export default function Page() {
       </p>
 
       <div className={styles.tableContainer}>
-        <Table className="w-[60vw]">
+        <Table className="w-[80vw]">
           <TableCaption>Features to implement</TableCaption>
           <TableHeader>
             <TableRow>
@@ -73,15 +73,20 @@ export default function Page() {
             </TableRow>
 
             <TableRow>
-              <TableCell>
-                Add playwright tests and a pipeline to run them on creation of a
-                PR
-              </TableCell>
+              <TableCell>Header with navigation</TableCell>
+              <TableCell>Complete ✅</TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell>Change dark mode theme colours</TableCell>
               <TableCell>Pending</TableCell>
             </TableRow>
 
             <TableRow>
-              <TableCell>Header with navigation</TableCell>
+              <TableCell>
+                Add playwright tests and a pipeline to run them on creation of a
+                PR
+              </TableCell>
               <TableCell>Pending</TableCell>
             </TableRow>
 

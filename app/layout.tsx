@@ -2,8 +2,10 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ReactNode, useState } from "react";
+import {ReactNode, useState} from "react";
 import { Header } from "@/components/Header";
+import {NavSidebar} from "@/components/NavSidebar";
+import {SidebarProvider} from "@/components/ui/sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,14 +24,18 @@ export default function RootLayout({
 }>) {
   const [isOpen, setIsOpen] = useState(false); // pass isOPen to sidebar and setIsOpen to header
   // remember to focus on nav on open
-  console.log(isOpen);
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark`} // TODO manipulate this for dark vs light mode toggle
       >
         <Header setIsOpen={setIsOpen} />
-        {children}
+        <SidebarProvider open={isOpen} onOpenChange={setIsOpen}>
+          <NavSidebar />
+          <main>
+            {children}
+          </main>
+        </SidebarProvider>
         <footer>TODO: Insert footer here</footer>
       </body>
     </html>

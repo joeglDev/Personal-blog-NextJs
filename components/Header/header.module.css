@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: var(--secondary);
+  padding: 1vh;
+}
+
+.button {
+  font-size: 2rem;
+  background-color: var(--background);
+  color: var(--font);
+}
+
+.button:hover {
+  background-color: var(--hover);
+}

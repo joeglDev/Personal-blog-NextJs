@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {ReactNode, useState} from "react";
-import {Button} from "@/components/ui/button";
+import { ReactNode, useState } from "react";
+import { Header } from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,13 +22,13 @@ export default function RootLayout({
 }>) {
   const [isOpen, setIsOpen] = useState(false); // pass isOPen to sidebar and setIsOpen to header
   // remember to focus on nav on open
+  console.log(isOpen);
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`} // TODO manipulate this for dark vs light mode toggle
       >
-        <header>TODO: Insert header here</header>
-        <Button aria-label="Click to open navigation drawer." onClick={() => setIsOpen(true)}>≣</Button>
+        <Header setIsOpen={setIsOpen} />
         {children}
         <footer>TODO: Insert footer here</footer>
       </body>

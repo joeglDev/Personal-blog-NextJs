@@ -1,12 +1,12 @@
 import { ReactNode } from "react";
 import styles from "./Heading.module.css";
 
-interface HeaderProps {
+interface HeadingProps {
   children: ReactNode;
   variant: "1" | "2" | "3";
 }
 
-export const Heading = ({ variant, children }: HeaderProps) =>
+export const Heading = ({ variant, children }: HeadingProps) =>
   variant === "1" ? (
     <h1 className={styles.h1}>{children}</h1>
   ) : variant === "2" ? (

@@ -58,7 +58,7 @@ export default function Page() {
       </p>
 
       <div className={styles.tableContainer}>
-        <Table className="w-[60vw]">
+        <Table className="w-[80vw]">
           <TableCaption>Features to implement</TableCaption>
           <TableHeader>
             <TableRow>
@@ -74,6 +74,11 @@ export default function Page() {
 
             <TableRow>
               <TableCell>Header with navigation</TableCell>
+              <TableCell>Complete ✅</TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell>Change dark mode theme colours</TableCell>
               <TableCell>Pending</TableCell>
             </TableRow>
 

@@ -3,6 +3,7 @@
   flex-direction: row-reverse;
   background-color: var(--secondary);
   padding: 1vh;
+  width: 100vw;
 }
 
 .button {

@@ -2,10 +2,10 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {ReactNode, useState} from "react";
+import { ReactNode, useState } from "react";
 import { Header } from "@/components/Header";
-import {NavSidebar} from "@/components/NavSidebar";
-import {SidebarProvider} from "@/components/ui/sidebar";
+import { NavSidebar } from "@/components/NavSidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,9 +32,7 @@ export default function RootLayout({
         <Header setIsOpen={setIsOpen} />
         <SidebarProvider open={isOpen} onOpenChange={setIsOpen}>
           <NavSidebar />
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
         </SidebarProvider>
         <footer>TODO: Insert footer here</footer>
       </body>

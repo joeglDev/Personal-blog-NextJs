@@ -9,6 +9,7 @@ import {
   SidebarMenuButton,
 } from "@/components/ui/sidebar";
 import Link from "next/dist/client/link";
+import styles from "./NavSidebar.module.css";
 
 export const NavSidebar = () => {
   return (
@@ -16,16 +17,22 @@ export const NavSidebar = () => {
       <SidebarContent>
         <SidebarGroup>
           <nav>
-            <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+            <SidebarGroupLabel className={styles.sidepanelTitle}>
+              Navigation
+            </SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu autoFocus>
                 <SidebarMenuItem>
                   <SidebarMenuButton asChild>
-                    <Link href="/about">About</Link>
+                    <Link className={styles.sidepanelLink} href="/about">
+                      About
+                    </Link>
                   </SidebarMenuButton>
 
                   <SidebarMenuButton asChild>
-                    <Link href="/">Blog</Link>
+                    <Link className={styles.sidepanelLink} href="/">
+                      Blog
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>

@@ -6,6 +6,7 @@ import { ReactNode, useState } from "react";
 import { Header } from "@/components/Header";
 import { NavSidebar } from "@/components/NavSidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
+import { Footer } from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +35,7 @@ export default function RootLayout({
           <NavSidebar />
           <main>{children}</main>
         </SidebarProvider>
-        <footer>TODO: Insert footer here</footer>
+        <Footer />
       </body>
     </html>
   );

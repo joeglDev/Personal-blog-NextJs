@@ -83,15 +83,15 @@ export default function Page() {
             </TableRow>
 
             <TableRow>
-              <TableCell>Change dark mode theme colours</TableCell>
-              <TableCell>Pending</TableCell>
-            </TableRow>
-
-            <TableRow>
               <TableCell>
                 Add playwright tests and a pipeline to run them on creation of a
                 PR
               </TableCell>
+              <TableCell>Complete ✅</TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell>Change dark mode theme colours</TableCell>
               <TableCell>Pending</TableCell>
             </TableRow>
 

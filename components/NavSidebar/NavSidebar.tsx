@@ -13,7 +13,7 @@ import styles from "./NavSidebar.module.css";
 
 export const NavSidebar = () => {
   return (
-    <Sidebar className="z-100">
+    <Sidebar className="z-100" data-testid="nav-sidebar">
       <SidebarContent>
         <SidebarGroup>
           <nav>

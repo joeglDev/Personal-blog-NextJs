@@ -26,6 +26,8 @@ End-to-end tests are carried out using playwright. To run the playwright tests p
 
 ## Continuous integration / Continuous deployment
 
+A validation pipeline runs as a github action and will not allow pull requests to be merged unless playwright e2e tests pass.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

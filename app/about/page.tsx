@@ -92,6 +92,11 @@ export default function Page() {
 
             <TableRow>
               <TableCell>Change dark mode theme colours</TableCell>
+              <TableCell>Complete ✅</TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell>Light / dark mode toggle</TableCell>
               <TableCell>Pending</TableCell>
             </TableRow>
 
@@ -99,11 +104,6 @@ export default function Page() {
               <TableCell>
                 Fetch blog post data from server and populate the index page
               </TableCell>
-              <TableCell>Pending</TableCell>
-            </TableRow>
-
-            <TableRow>
-              <TableCell>Light / dark mode toggle</TableCell>
               <TableCell>Pending</TableCell>
             </TableRow>
 

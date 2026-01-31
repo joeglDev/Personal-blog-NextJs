@@ -4,6 +4,8 @@
   background-color: var(--secondary);
   padding: 1vh;
   width: 100vw;
+  position: sticky;
+  top: 0;
 }
 
 .button {

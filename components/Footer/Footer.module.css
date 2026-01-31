@@ -9,6 +9,8 @@
   padding: 16px;
   width: 100vw;
   margin-top: 1.5rem;
+  position: sticky;
+  bottom: 0;
 }
 
 .icon {

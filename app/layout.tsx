@@ -34,12 +34,12 @@ export default function RootLayout({
       >
         <Header setIsOpen={setIsOpen} />
         <SidebarProvider open={isOpen} onOpenChange={setIsOpen}>
-          <NavSidebar />
           <ThemeProvider
             attribute="data-theme"
             defaultTheme="dark"
             enableSystem={false}
           >
+            <NavSidebar />
             <main>{children}</main>
           </ThemeProvider>
         </SidebarProvider>

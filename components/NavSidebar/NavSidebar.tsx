@@ -12,38 +12,36 @@ import Link from "next/dist/client/link";
 import styles from "./NavSidebar.module.css";
 import { ThemeToggle } from "@/components/NavSidebar/components";
 
-export const NavSidebar = () => {
-  return (
-    <Sidebar className="z-100" data-testid="nav-sidebar">
-      <SidebarContent>
-        <SidebarGroup>
-          <nav>
-            <SidebarGroupLabel className={styles.sidepanelTitle}>
-              Navigation
-            </SidebarGroupLabel>
-            <SidebarGroupContent>
-              <SidebarMenu autoFocus>
-                <SidebarMenuItem>
-                  <SidebarMenuButton asChild>
-                    <Link className={styles.sidepanelLink} href="/about">
-                      About
-                    </Link>
-                  </SidebarMenuButton>
+export const NavSidebar = () => (
+  <Sidebar className="z-100" data-testid="nav-sidebar">
+    <SidebarContent>
+      <SidebarGroup>
+        <nav>
+          <SidebarGroupLabel className={styles.sidepanelTitle}>
+            Navigation
+          </SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu autoFocus>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <Link className={styles.sidepanelLink} href="/about">
+                    About
+                  </Link>
+                </SidebarMenuButton>
 
-                  <SidebarMenuButton asChild>
-                    <Link className={styles.sidepanelLink} href="/">
-                      Blog
-                    </Link>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </nav>
-        </SidebarGroup>
-        <SidebarGroup>
-          <ThemeToggle />
-        </SidebarGroup>
-      </SidebarContent>
-    </Sidebar>
-  );
-};
+                <SidebarMenuButton asChild>
+                  <Link className={styles.sidepanelLink} href="/">
+                    Blog
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </nav>
+      </SidebarGroup>
+      <SidebarGroup>
+        <ThemeToggle />
+      </SidebarGroup>
+    </SidebarContent>
+  </Sidebar>
+);

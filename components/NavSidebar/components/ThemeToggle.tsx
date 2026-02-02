@@ -1,23 +1,15 @@
 "use client";
 
 import { Switch } from "@/components/ui/switch";
-import { useEffect, useState } from "react";
 import styles from "./ThemeToggle.module.css";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTheme } from "next-themes";
 
 export const ThemeToggle = () => {
-  const [isChecked, setIsChecked] = useState(true);
-
-  const onClick = () => setIsChecked((prevState) => !prevState);
-
-  useEffect(() => {
-    if (isChecked) {
-      document.body.setAttribute("data-theme", "dark");
-    } else {
-      document.body.setAttribute("data-theme", "light");
-    }
-  }, [isChecked]);
+  const { theme, setTheme } = useTheme();
+  const isChecked = theme !== "light";
+  const onClick = () => (isChecked ? setTheme("light") : setTheme("dark"));
 
   return (
     <div className={styles.flexColumn}>

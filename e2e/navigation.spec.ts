@@ -25,6 +25,4 @@ test("index page to about page", async ({ page }) => {
 
 test("can toggle light / dark theme", async ({ page }) => {
   await indexPage.toggleColourTheme(page, "Dark");
-  //  await indexPage.toggleColourTheme(page, "Light")
-  // await indexPage.toggleColourTheme(page, "Dark")
 });

@@ -1,5 +1,3 @@
-'use client'
-
 import {
   SidebarContent,
   Sidebar,
@@ -12,7 +10,7 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/dist/client/link";
 import styles from "./NavSidebar.module.css";
-import {ThemeToggle} from "@/components/NavSidebar/components";
+import { ThemeToggle } from "@/components/NavSidebar/components";
 
 export const NavSidebar = () => {
   return (
@@ -43,7 +41,7 @@ export const NavSidebar = () => {
           </nav>
         </SidebarGroup>
         <SidebarGroup>
-<ThemeToggle/>
+          <ThemeToggle />
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>

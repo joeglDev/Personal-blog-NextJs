@@ -1,5 +1,14 @@
 .themeContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
 }

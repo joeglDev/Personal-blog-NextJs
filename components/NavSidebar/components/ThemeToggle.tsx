@@ -20,17 +20,21 @@ export const ThemeToggle = () => {
   }, [isChecked]);
 
   return (
-    <div className={styles.themeContainer}>
-      <label className={styles.label} htmlFor="light-dark-mode-toggle">
-        <span>Current theme:</span>
-        <FontAwesomeIcon icon={isChecked ? faMoon : faSun} />
-      </label>
-      <Switch
-        aria-label="Set light / dark theme"
-        id="light-dark-mode-toggle"
-        checked={isChecked}
-        onClick={onClick}
-      />
-    </div>
+      <div className={styles.flexColumn}>
+          <div className={styles.themeContainer}>
+              <label className={styles.label} htmlFor="light-dark-mode-toggle">
+                  <span>Current theme:</span>
+                  <FontAwesomeIcon icon={isChecked ? faMoon : faSun} />
+              </label>
+              <Switch
+                  aria-label="Set light / dark theme"
+                  id="light-dark-mode-toggle"
+                  checked={isChecked}
+                  onClick={onClick}
+              />
+          </div>
+          {!isChecked && <p>⚠️: Please note that light mode is experimental</p>}
+      </div>
+
   );
 };

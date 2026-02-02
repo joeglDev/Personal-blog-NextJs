@@ -97,7 +97,7 @@ export default function Page() {
 
             <TableRow>
               <TableCell>Light / dark mode toggle</TableCell>
-              <TableCell>Pending</TableCell>
+              <TableCell>Complete ✅</TableCell>
             </TableRow>
 
             <TableRow>

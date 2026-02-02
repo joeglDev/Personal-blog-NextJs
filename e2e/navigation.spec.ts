@@ -22,3 +22,7 @@ test("index page to about page", async ({ page }) => {
   await aboutPage.navigateToPageUsingSidebar(page, "Blog");
   await indexPage.expectTitle(page);
 });
+
+test("can toggle light / dark theme", async ({ page }) => {
+  await indexPage.toggleColourTheme(page, "Dark");
+});

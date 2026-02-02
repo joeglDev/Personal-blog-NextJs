@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/dist/client/link";
 import styles from "./NavSidebar.module.css";
+import { ThemeToggle } from "@/components/NavSidebar/components";
 
 export const NavSidebar = () => {
   return (
@@ -38,6 +39,9 @@ export const NavSidebar = () => {
               </SidebarMenu>
             </SidebarGroupContent>
           </nav>
+        </SidebarGroup>
+        <SidebarGroup>
+          <ThemeToggle />
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>

@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { NavSidebar } from "@/components/NavSidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { Footer } from "@/components/Footer";
+import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,17 +24,24 @@ export default function RootLayout({
 }: Readonly<{
   children: ReactNode;
 }>) {
-  const [isOpen, setIsOpen] = useState(false); // pass isOPen to sidebar and setIsOpen to header
-  // remember to focus on nav on open
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <html lang="en">
+    // `suppressHydrationWarning` is used to prevent React hydration mismatch warnings
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`} // TODO manipulate this for dark vs light mode toggle
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Header setIsOpen={setIsOpen} />
         <SidebarProvider open={isOpen} onOpenChange={setIsOpen}>
           <NavSidebar />
-          <main>{children}</main>
+          <ThemeProvider
+            attribute="data-theme"
+            defaultTheme="dark"
+            enableSystem={false}
+          >
+            <main>{children}</main>
+          </ThemeProvider>
         </SidebarProvider>
         <Footer />
       </body>

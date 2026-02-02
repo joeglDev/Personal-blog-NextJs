@@ -27,25 +27,24 @@ export default function RootLayout({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-      // `suppressHydrationWarning` is used to prevent React hydration mismatch warnings
-      <html lang="en" suppressHydrationWarning>
+    // `suppressHydrationWarning` is used to prevent React hydration mismatch warnings
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <Header setIsOpen={setIsOpen} />
         <SidebarProvider open={isOpen} onOpenChange={setIsOpen}>
           <NavSidebar />
-          <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem={false}>
-          <main>
-
-              {children}
-
-            </main>
+          <ThemeProvider
+            attribute="data-theme"
+            defaultTheme="dark"
+            enableSystem={false}
+          >
+            <main>{children}</main>
           </ThemeProvider>
         </SidebarProvider>
         <Footer />
       </body>
     </html>
-
   );
 }

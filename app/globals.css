@@ -13,7 +13,8 @@
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);  --color-background: var(--background);
+  --color-chart-2: var(--chart-2);
+  --color-background: var(--background);
   --color-chart-1: var(--chart-1);
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -49,21 +50,27 @@ body {
   --radius: 0.625rem;
 }
 
-[data-theme='light'] {
+/*
+Todo:
+lightmode button hover
+lightmode switch
+lightmode table
+ */
+[data-theme="light"] {
   --background: white; /* html background */
   --foreground: black; /* text colour */
-  --secondary: #A8C4EC; /* header / footer background colour */
-  --hover: #37426B;
-  --sidebar: #77E4D0;
+  --secondary: #a8c4ec; /* header / footer background colour */
+  --hover: #77e4d0;
+  --sidebar: #77e4d0;
   --sidebar-foreground: black;
 }
 
-[data-theme='dark']  {
+[data-theme="dark"] {
   --foreground: white; /* text colour */
-  --background: #262B40; /* html background */
-  --secondary: #06457F; /* header / footer background colour */
-  --hover: #37426B;
-  --sidebar: #2C3E4C;
+  --background: #262b40; /* html background */
+  --secondary: #06457f; /* header / footer background colour */
+  --hover: #37426b;
+  --sidebar: #2c3e4c;
 
   /* Defaults  */
   --card: oklch(0.216 0.006 56.043);

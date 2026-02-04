@@ -16,8 +16,8 @@ const {data, isError} = await getAllBlogPosts();
 
   return (
     <>
-      <h1>Index page</h1>
-      <p>⚠️ Under construction ⚠️️</p>
+      <Heading variant={"1"}>My blog</Heading>
+
         {
             data.map(({title, content}, index) => {
                 return (

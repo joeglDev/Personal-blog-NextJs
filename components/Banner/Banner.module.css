@@ -1,25 +1,23 @@
-
-
 .bannerError {
-    background-color: var(--error-background);
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    padding: 2rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: black;
+  background-color: var(--error-background);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .bannerWarning {
-    background-color: var(--warning-background);
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    padding: 2rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: black;
+  background-color: var(--warning-background);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
 }

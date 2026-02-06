@@ -68,8 +68,8 @@ light-mode table dividers
   --hover: #77e4d0;
   --sidebar: #77e4d0;
   --sidebar-foreground: black;
-  --error-background: #F77979;
-  --warning-background: #F7DE79;
+  --error-background: #f77979;
+  --warning-background: #f7de79;
 }
 
 [data-theme="dark"] {
@@ -79,8 +79,8 @@ light-mode table dividers
   --sidebar-accent: var(--secondary);
   --hover: #37426b;
   --sidebar: #2c3e4c;
-  --error-background: #F77979;
-  --warning-background: #F7DE79;
+  --error-background: #f77979;
+  --warning-background: #f7de79;
 
   /* Defaults  */
   --card: oklch(0.216 0.006 56.043);

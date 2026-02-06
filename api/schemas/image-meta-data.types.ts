@@ -1,4 +1,4 @@
 export interface ImageMetaData {
-    name?: string;
-    altText?: string;
+  name?: string;
+  altText?: string;
 }

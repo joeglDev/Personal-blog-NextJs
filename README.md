@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 First, Create a `.env` file at project root and add the environment variable for local development:
+
 ```
     ENVIRONMENT=development
 ```

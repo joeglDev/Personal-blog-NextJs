@@ -1,1 +1,1 @@
-export * from './blog-post.types';
+export * from "./blog-post.types";
